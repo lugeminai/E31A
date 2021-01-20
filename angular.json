@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "E31A"
+  "defaultProject": "E31A",
+  "cli": {
+    "analytics": false
+  }
 }
