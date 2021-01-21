@@ -7,14 +7,16 @@ import { TeamComponent } from './pages/team/team.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { HomeComponent } from './pages/home/home.component';
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { ProjectComponent } from './pages/project/project.component'
 @NgModule({
   declarations: [
     AppComponent,
     ContactusComponent,
     TeamComponent,
     AboutusComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
