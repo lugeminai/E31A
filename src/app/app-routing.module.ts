@@ -5,8 +5,10 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { TeamComponent } from './pages/team/team.component';
 import {HomeComponent } from './pages/home/home.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 const routes: Routes = [
+    { path: 'project', component: ProjectComponent},
     { path: 'contactus', component: ContactusComponent },
     { path: 'aboutus', component: AboutusComponent },
     { path: 'team', component: TeamComponent },
