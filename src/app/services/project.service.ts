@@ -9,6 +9,6 @@ export class ProjectService {
   constructor(private readonly http: HttpClient) { }
   
   getProject(){
-    return this.http.get('/api/project/GetProject');
+    return this.http.get('/api/project/GetProjects');
   }
 }
