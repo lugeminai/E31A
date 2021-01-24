@@ -8,7 +8,10 @@ export class ProjectService {
 
   constructor(private readonly http: HttpClient) { }
   
-  getProject(){
+  getProjects(){
     return this.http.get('/api/project/GetProjects');
+  }
+  getApartments(){
+    return this.http.get('/api/apartment/GetApartments');
   }
 }
