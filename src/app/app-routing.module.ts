@@ -9,6 +9,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
+  { path: 'project/:id', component: ProjectComponent },
   { path: 'project', component: ProjectComponent },
   { path: 'apartment/:projectId', component: ApartmentComponent },
   { path: 'contactus', component: ContactusComponent },
