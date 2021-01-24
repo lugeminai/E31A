@@ -1,6 +1,6 @@
 const PROXY_CONFIG = [{
     context: ['/api'],
-    target: 'localhost:4000/',
+    target: 'http://localhost:4000/',
     secure: false,
 }, ];
 
