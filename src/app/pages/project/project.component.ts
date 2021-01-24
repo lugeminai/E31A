@@ -1,28 +1,97 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ProjectService } from 'src/app/services/project.service';
 
+import { ActivatedRoute, Params } from '@angular/router';
+
+
+
 @Component({
+
   selector: 'app-project',
+
   templateUrl: './project.component.html',
+
   styleUrls: ['./project.component.css']
+
 })
+
 export class ProjectComponent implements OnInit {
+
+
 
   projects = [];
 
-  constructor(private readonly projectService: ProjectService) { 
-    
-  }
+  apartments = [];
+
+
+
+  constructor(private readonly projectService: ProjectService, private activateRoute: ActivatedRoute) { }
+
+
 
   getProjects(){
-    this.projectService.getProject().subscribe((rest: any) => {
-      console.log(rest);
+
+    this.projectService.getProjects().subscribe((rest: any) => {
+
       this.projects = rest.data;
+
+      console.log(this.projects);
+
     })
+
   }
 
+
+
+  getProjectById(id: number){
+
+    this.projectService.getProjects().subscribe((rest: any) => {
+
+      this.projects = rest.data.filter(item => item.id == id);
+
+      console.log(this.projects);
+
+    })
+
+  }
+
+
+
+  getApartmentsByProject(id: number){
+
+    this.projectService.getApartments().subscribe((rest: any) => {
+
+      this.apartments = rest.data.filter(item => item.projectId == id);
+
+      console.log(this.apartments);
+
+    })
+
+  }
+
+
+
   ngOnInit(): void {
-    this.getProjects();
+
+    this.activateRoute.params.subscribe((params: Params) => {
+
+      if (params.id){
+
+        this.getProjectById(params.id);
+
+        this.getApartmentsByProject(params.id);
+
+      }
+
+      else {
+
+        this.getProjects();
+
+      }
+
+    });
+
   }
 
 }
