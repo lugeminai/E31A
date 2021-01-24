@@ -1,0 +1,112 @@
+{
+    "data":[
+        {
+            "projectId": 1,
+            "id": 1,
+            "name": "Nº 43",
+            "size": "145 m²",
+            "floor": "4ºPiso",
+            "type": "Mixto",
+            "image": "assets/img/departments/department-Adina-01.jpg"
+        },
+        {
+            "projectId": 1,
+            "id": 2,
+            "name": "Nº 63",
+            "size": "100 m²",
+            "floor": "7ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Boulogne-01.jpg"
+        },
+        {
+            "projectId": 1,
+            "id": 3,
+            "name": "Nº 73",
+            "size": "245 m²",
+            "floor": "8ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Collings-01.jpg"
+        },
+        {
+            "projectId": 2,
+            "id": 4,
+            "name": "Nº 88",
+            "size": "145 m²",
+            "floor": "2ºPiso",
+            "type": "Estudio",
+            "image": "assets/img/departments/department-PacificHighway-01.jpg"
+        },
+        {
+            "projectId": 3,
+            "id": 5,
+            "name": "Nº 12",
+            "size": "145 m²",
+            "floor": "1ºPiso",
+            "type": "Mixto",
+            "image": "assets/img/departments/department-Thomas-01.jpg"
+        },
+        {
+            "projectId": 3,
+            "id": 6,
+            "name": "Nº 43",
+            "size": "145 m²",
+            "floor": "3ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Timber-01.jpg"
+        },
+        {
+            "projectId": 2,
+            "id": 7,
+            "name": "Nº 43",
+            "size": "145 m²",
+            "floor": "4ºPiso",
+            "type": "Mixto",
+            "image": "assets/img/departments/department-Adina-01.jpg"
+        },
+        {
+            "projectId": 3,
+            "id": 8,
+            "name": "Nº 63",
+            "size": "100 m²",
+            "floor": "7ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Boulogne-01.jpg"
+        },
+        {
+            "projectId": 4,
+            "id": 9,
+            "name": "Nº 73",
+            "size": "245 m²",
+            "floor": "8ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Collings-01.jpg"
+        },
+        {
+            "projectId": 4,
+            "id": 10,
+            "name": "Nº 88",
+            "size": "145 m²",
+            "floor": "2ºPiso",
+            "type": "Estudio",
+            "image": "assets/img/departments/department-PacificHighway-01.jpg"
+        },
+        {
+            "projectId": 5,
+            "id": 11,
+            "name": "Nº 12",
+            "size": "145 m²",
+            "floor": "1ºPiso",
+            "type": "Mixto",
+            "image": "assets/img/departments/department-Thomas-01.jpg"
+        },
+        {
+            "projectId": 5,
+            "id": 12,
+            "name": "Nº 43",
+            "size": "145 m²",
+            "floor": "3ºPiso",
+            "type": "Duplex",
+            "image": "assets/img/departments/department-Timber-01.jpg"
+        }
+    ]
+}
