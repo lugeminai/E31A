@@ -1,26 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
-import { TeamComponent } from './pages/team/team.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { TeamComponent } from './pages/team/team.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ProjectComponent } from './pages/project/project.component'
+import { ApartmentComponent } from './pages/apartment/apartment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ContactusComponent,
-    TeamComponent,
     AboutusComponent,
+    TeamComponent,
     HomeComponent,
-    ProjectComponent
+    ProjectComponent,
+    ApartmentComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
