@@ -24,7 +24,7 @@ export class ProjectComponent implements OnInit {
 
   apartments = [];
 
-
+  showProject = "true";
 
   constructor(private readonly projectService: ProjectService, private activateRoute: ActivatedRoute) { }
 
@@ -81,7 +81,8 @@ export class ProjectComponent implements OnInit {
         this.getProjectById(params.id);
 
         this.getApartmentsByProject(params.id);
-
+        
+        this.showProject = "false";
       }
 
       else {
