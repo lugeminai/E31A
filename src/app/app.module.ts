@@ -7,10 +7,11 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { TeamComponent } from './pages/team/team.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProjectComponent } from './pages/project/project.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ProjectComponent } from './pages/project/project.component';
 import { ApartmentComponent } from './pages/apartment/apartment.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,12 @@ import { ApartmentComponent } from './pages/apartment/apartment.component';
     HomeComponent,
     ProjectComponent,
     ApartmentComponent
-  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
